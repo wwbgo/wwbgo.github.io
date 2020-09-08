@@ -4,7 +4,7 @@
 
 # Site
 title: wwb's blogs
-subtitle: 'share anything'
+subtitle: 'shared anything'
 description: 'anything'
 keywords: C#,Docker,Kubernetes,Kafka,Redis
 author: wwb
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wwbgo.github.io/Blog
+url: https://wwbgo.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -100,7 +100,24 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# Extensions
+Plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# sitemap
+sitemap:
+  path: sitemap.xml
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:wwbgo/wwbgo.github.io.git
+  branch: home
