@@ -119,6 +119,6 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:wwbgo/wwbgo.github.io.git
+  repo: https://github.com/wwbgo/wwbgo.github.io.git
   branch: home
   token: ${GitHubToken}
