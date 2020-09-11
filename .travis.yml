@@ -4,11 +4,12 @@ node_js:
 cache: npm
 before_install:
   - export TZ='Asia/Shanghai'
-  - npm install -g hexo-cli
+  - git config --global user.name "wwbgo"
+  - git config --global user.email "wwbgo@qq.com"
 install:
+  - npm install -g hexo-cli
   - npm install
 script:
   - hexo clean
   - hexo generate
-after_script:
   - hexo deploy

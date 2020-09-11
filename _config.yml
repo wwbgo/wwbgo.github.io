@@ -121,4 +121,4 @@ deploy:
   type: git
   repo: https://github.com/wwbgo/wwbgo.github.io.git
   branch: home
-  token: ${GitHubToken}
+  token: $GitHubToken
