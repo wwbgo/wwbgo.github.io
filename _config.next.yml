@@ -564,11 +564,11 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active:
+  active: valine
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: false
+  lazyload: true
   # Modify texts or order for any navs, here are some examples.
   nav:
     #disqus:
@@ -580,7 +580,7 @@ comments:
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: wwb
   count: true
 
 # DisqusJS
@@ -606,20 +606,20 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appId: # Your leancloud application appid
-  appKey: # Your leancloud application appkey
-  placeholder: Just go go # Comment box placeholder
-  avatar: mm # Gravatar style
+  enable: true
+  appId: X2QEu4ASTqBcGAfMNmIg7x4w-9Nh9j0Va # Your leancloud application appid
+  appKey: KeEOWAyXIrPxbvWsFqxsS06h # Your leancloud application appkey
+  placeholder: 有什么可以为您服务的？ # Comment box placeholder
+  avatar: identicon # Gravatar style
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # Pagination size
-  lang: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  lang: zh-cn # Language, available values: en, zh-cn
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: false # Whether to record the commenter IP
+  recordIP: true # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   enableQQ: false # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: [] # Set required fields: [nick] | [nick, mail]
+  requiredFields: [nick] # Set required fields: [nick] | [nick, mail]
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
