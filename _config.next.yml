@@ -609,7 +609,7 @@ valine:
   enable: true
   appId: X2QEu4ASTqBcGAfMNmIg7x4w-9Nh9j0Va # Your leancloud application appid
   appKey: KeEOWAyXIrPxbvWsFqxsS06h # Your leancloud application appkey
-  placeholder: 有什么可以为您服务的？ # Comment box placeholder
+  placeholder: 有缘千里来评论 # Comment box placeholder
   avatar: identicon # Gravatar style
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # Pagination size
